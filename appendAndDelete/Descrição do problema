@@ -35,9 +35,9 @@ The third line contains an integer k, the number of operations.
 
 Constraints
 
-(1 \leq |s| \leq 100)
-(1 \leq |t| \leq 100)
-(1 \leq k \leq 100)
+(1 <= |s| <= 100)
+(1 <= |t| <= 100)
+(1 <= k <= 100)
 s and t consist of lowercase English letters, ascii[a-z].
 Sample Input 0
 
