@@ -24,7 +24,7 @@ Sinta-se à vontade para abrir issues, sugerir melhorias ou enviar pull requests
 
 Se quiser trocar ideias ou sugerir novos desafios, entre em contato:
 
-- [LinkedIn](https://www.linkedin.com/in/eduardoarrigoni/)
+- [LinkedIn](https://www.linkedin.com/in/eduardosouzaarrigoni)
 - [GitHub](https://github.com/eduardoarrigoni)
 
 ---
