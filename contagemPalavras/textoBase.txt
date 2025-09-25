@@ -1,0 +1,5 @@
+Algumas interfaces gráficas, apesar de ajudarem muito, não são muito intuitivas, ou são muito lentas, seja para iniciar, carregar módulos, ou outras coisas. Ou então, queremos aprender como as coisas funcionam no seu core.
+Com o terminal temos um resultado mais direto e, algumas vezes, mais rápido do que pela interface gráfica, apesar de não ser tão bela a apresentação. Além disso, podemos realizar algumas tarefas com poucos comandos, ou, até mesmo, criar os nossos próprios.
+Quando falamos em terminal, logo já vem mas uma imagem de alguma distribuição Linux na cabeça, porém podemos utilizar o terminal no Mac também, alguns comandos são idênticos entre esses sistemas.
+No Windows, também temos a possibilidade de mas utilizar o terminal, nele é chamado de cmd, ou prompt de comando, porém no Linux e no Mac essa prática é mais comum. Por isso, os comando que veremos pelo terminal poderão ser usados no Linux e no Mac, mas não são compatíveis com o Windows.
+Mas então, como começar a utilizar o terminal?
