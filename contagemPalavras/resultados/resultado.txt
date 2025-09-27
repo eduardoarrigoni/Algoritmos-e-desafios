@@ -1,0 +1,4 @@
+palavras duplicadas no paragrafo 1: muito, são, coisas
+palavras duplicadas no paragrafo 2: com, mais, algumas
+palavras duplicadas no paragrafo 3: terminal
+palavras duplicadas no paragrafo 4: windows, mas, terminal, comando, linux, mac

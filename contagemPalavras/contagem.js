@@ -1,21 +1,4 @@
-const fs = require('fs');
-
-const caminhoArquivo = process.argv;
-const local = caminhoArquivo[2];
-
-fs.readFile(local, "utf-8", (erro, texto) => {
-    try{
-        if(erro) throw erro;
-        divisaoParagrafos(texto);
-
-    }catch(erro){
-
-        if(erro.code === 'ENOENT') console.log('Caminho errado');
-        else console.log('Outro problema');
-    }
-    
-})
-function divisaoParagrafos(texto){
+export function divisaoParagrafos(texto){
 
     const paragrafos = texto.toLowerCase().split('\n');
     const contagem = paragrafos.flatMap(paragrafo => {
@@ -23,7 +6,7 @@ function divisaoParagrafos(texto){
         return contagemPalavras(refinaTexto(paragrafo));
 
     })
-    console.log(contagem);
+    return contagem;
 }
 function refinaTexto(texto){
     return texto.replace(/[.,\/#?!$%\^&\*;:{}=\r\-_`~()]/g, '');;

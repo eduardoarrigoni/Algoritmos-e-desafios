@@ -1,0 +1,21 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Bem-vindo(a) ao meu repositório de soluções de problemas de lógica de programação! 🚀",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardoarrigoni/Algoritmos-e-desafios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardoarrigoni/Algoritmos-e-desafios/issues"
+  },
+  "homepage": "https://github.com/eduardoarrigoni/Algoritmos-e-desafios#readme"
+}
