@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/eduardoarrigoni/Algoritmos-e-desafios/issues"
   },
-  "homepage": "https://github.com/eduardoarrigoni/Algoritmos-e-desafios#readme"
+  "homepage": "https://github.com/eduardoarrigoni/Algoritmos-e-desafios#readme",
+  "dependencies": {
+    "commander": "^14.0.1"
+  }
 }
