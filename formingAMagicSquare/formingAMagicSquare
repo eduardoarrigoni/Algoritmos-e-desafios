@@ -1,5 +1,4 @@
 'use strict';
-
 const fs = require('fs');
 
 process.stdin.resume();
@@ -31,13 +30,66 @@ function readLine() {
 
 function formingMagicSquare(s) {
     // Write your code here
-
+    let somaHorizontal = 0;
+    let somaVertical = 0;
+    const mInversa = matrixInversa(s);
+    let custo = 0;
+    let somaDiagonal =0;
+    
+    for(let i = 0; i < 3; i++){
+        
+        somaHorizontal = s[i].reduce((acumulador, valor) => acumulador+ valor);
+        
+        for(let j =0; j < 3; j++){
+            
+            somaVertical = mInversa[j].reduce((acumulador, valor) => acumulador+ valor);
+            if((i = j) || (j === 2 && i ===0) || (j ===0 && i ===2)){
+                somaDiagonal = calculaDiagonal(s, i, j);
+            }else{
+                somaDiagonal = somaHorizontal;
+            }
+            console.log(somaHorizontal, somaVertical, somaDiagonal);
+            if((somaHorizontal === somaVertical && somaHorizontal === somaDiagonal) && (somaHorizontal != 15)){
+                custo += Math.abs(somaHorizontal - 15);
+                s = trocaValor(s, i, j, somaHorizontal);
+                console.log(s);
+                
+            }
+                    
+        }
+    }
+    return custo;
 }
-// percorrer cada elemento e verificar em quantas direções 
-// não está somando 15
-// se direcoesSomasErradas > 1 -> alterar e somar no custo
-// else passar para o proximo
-//  
+
+function matrixInversa(s){
+    
+    const matrixNova = [[],[],[]];
+    for(let i = 0; i < 3; i++){
+        for(let j =0; j < 3; j++){
+            matrixNova[i][j] = s[j][i];
+        }
+    }
+    return matrixNova;
+}
+function trocaValor(s, linha, coluna, soma){
+    const valorRestante = soma - 15;
+        
+    s[linha][coluna] -= valorRestante;
+    return s;
+    
+}
+function calculaDiagonal(s, linha, coluna){
+    let soma =0;
+    if(linha === coluna){
+        for(let i =0; i<3; i++){
+            soma += s[i][i];
+        }
+    }else{
+        soma += s[0][2] + s[1][1] + s[2][0];
+    }
+    return soma;
+}
+
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
